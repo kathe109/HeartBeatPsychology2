@@ -1,0 +1,410 @@
+body {
+    background-image: url('../assets/fondo-5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100% !important;
+    position: fixed !important; /* O puedes usar 'sticky' si prefieres */
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 1000 !important; /* Asegúrate de que está por encima de otros elementos */
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.css-5iifl-MuiPaper-root-MuiAppBar-root {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto; /* Empuja el footer hacia abajo */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.auth-background {
+    background: linear-gradient(to top right, #342755, #283048); /* Gradiente oscuro para el fondo */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.auth-container {
+    background: rgba(255, 255, 255, 0.8); /* Translúcido */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Sombra más pronunciada para efecto flotante */
+    width: 300px; /* Controla el ancho del formulario */
+}
+
+
+.toggle-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+}
+
+/* AuthForm.css */
+.auth-form input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #afb2ff;
+    background: transparent; /* Semi-translúcido */
+    color: #333;
+}
+.auth-form input:hover {
+    border: 1px solid #afb2ff !important;
+}
+
+.auth-form button {
+    padding: 15px;
+    background-color: #ffff; /* O el color que prefieras */
+    color: #333;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+    background-color: #afb2ff; /* Un tono más claro al hacer hover */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.auth-form input:focus {
+    outline: none;
+    border-color: #6200ee; /* Color de enfoque para inputs */
+}
+
+.auth-form input, .auth-form button {
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 600px) {
+    .footer-content {
+        flex-direction: row;
+    }
+}
+
+/* Navbar.css */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.navbar .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4CAF50;
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;  /* Ocultar los enlaces en dispositivos pequeños */
+    }
+
+    .nav-links.mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Full width */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #333;
+    }
+
+    .nav-links.mobile li {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        flex-grow: 1;
+    }
+}
+
+
+.navbar {
+    background-color: #4a00e0; /* Color primario para el Navbar */
+    color: white;
+}
+
+.footer {
+    background-color: transparent; /* Color secundario para el Footer */
+    color: white;
+}
+
+.container {
+    padding: 20px;
+    background: white; /* Fondo para los contenedores principales */
+}
+
+.main-content {
+    padding-top: 70px; /* Ajusta según la altura de tu navbar */
+    padding-bottom: 50px; /* Ajusta según la altura de tu footer */
+    flex: 1; /* Ocupa el espacio disponible */
+}
+
+.css-mzavur-MuiContainer-root {
+
+}
+
+.css-95f9g5-MuiToolbar-root {
+    width: 100%;
+}
+
+/* Base del contenedor del formulario */
+.auth-form {
+    background-color: transparent; /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(5px); /* Efecto borroso en el fondo */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 300px; /* Ajusta según tus necesidades */
+}
+
+/* Estilos para los títulos de formulario */
+.form-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los campos de entrada */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Botón de envío */
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6200ee;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #7a2be2;
+}
+
+/* Estilos adicionales para mejorar la apariencia y la respuesta */
+@media (max-width: 600px) {
+    .auth-form {
+        width: 90%; /* Hace que el formulario sea más sensible */
+    }
+}
+
+body, .container { /* Asumiendo que usas una clase container para envolver todo */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    min-height: 100vh; /* Ocupa al menos el alto completo de la ventana */
+    margin: 0; /* Elimina márgenes predeterminados */
+    /* background: linear-gradient(to bottom right, #8A2387, #E94057, #F27121); */
+}
+.auth-form {
+    max-width: 400px; /* Máximo ancho del formulario */
+    background-color: transparent;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Efecto borroso para el fondo */
+}
+.auth-form .css-binzgt {
+    margin-top: 0;
+}
+.footer {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.social-links a i {
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover i {
+    color: #4CAF50; /* Cambia al color que desees al pasar el mouse */
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.css-mzavur-MuiContainer-root {
+    max-width: 400px;
+}
+.auth-form .css-164r41r {
+    margin-top: 0;
+}
+.css-byenzh-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked,
+.css-8je8zh-MuiTouchRipple-root,
+.css-jsexje-MuiSwitch-thumb {
+    color: #afb2ff !important;
+}
+.css-byenzh-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
+    background-color:#afb2ff !important;
+}
+.css-mzavur-MuiContainer-root {
+    max-width: 1100px !important;
+    width: 1100px;
+    margin: auto;
+}
+.css-mzavur-MuiContainer-root.auth-form {
+    max-width: 444px !important;
+}
+.boxes .css-ew41qn-MuiTypography-root {
+    display: flex;
+    justify-content: flex-start;
+    color: #ffff;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.boxes .css-6fm6rz-MuiPaper-root-MuiCard-root {
+    background: #787ac3;
+}
+.boxes .css-rpy7cs-MuiButtonBase-root-MuiButton-root {
+    color: #ffff;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.boxes .css-13y79c5-MuiTypography-root {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.boxes .css-46bh2p-MuiCardContent-root p {
+    color: #fff;
+}
+.boxes .css-13y79c5-MuiTypography-root {
+    color: #fff;
+    text-align: center;
+}
