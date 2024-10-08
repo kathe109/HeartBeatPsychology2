@@ -26,9 +26,8 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
         </Typography>
         {!isLoggedIn ? (
           <>
-            <Button color="inherit" onClick={() => navigate("/home")}>Inicio</Button>
+            {/* <Button color="inherit" onClick={() => navigate("/home")}>Inicio</Button> */}
             <Button color="inherit" onClick={() => navigate("/about")}>Sobre nosotros</Button>
-            <Button color="inherit" onClick={() => navigate("/sessions")}>Sesiones</Button>
             <Button color="inherit" onClick={() => navigate("/login")}>Login</Button>
           </>
         ) : (

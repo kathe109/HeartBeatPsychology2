@@ -1,6 +1,7 @@
 body {
-    background-image: url('../assets/fondo-5.png');
+    /* background-image: url('../assets/fondo-5.png'); */
     background-size: cover;
+    background-color: #4d448b;
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
@@ -408,3 +409,65 @@ body, .container { /* Asumiendo que usas una clase container para envolver todo 
     color: #fff;
     text-align: center;
 }
+.css-u4uvlt-MuiContainer-root.detail .css-1dtoofl-MuiPaper-root {
+    display: flex;
+    flex-direction: column;
+    --Paper-shadow: none !important;
+    background-color: #4d448b;
+    height: 100vh;
+}
+/* En tu archivo CSS global o en un módulo CSS específico para CategoryDetailPage */
+.category-detail-container {
+    width: 100% !important;
+    max-width: inherit !important;
+    /* height: 100vh; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #4d448b;
+}
+.css-5c1adp-MuiContainer-root.orden {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+}
+img.css-1kdeica {
+    width: 400px;
+    border-radius: 10px;
+}
+.category-detail-container h4,
+.css-u4uvlt-MuiContainer-root.detail .css-1dtoofl-MuiPaper-root p {
+    color: white;
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: 0;
+} 
+
+.button .css-1oitmrd-MuiButtonBase-root-MuiCardActionArea-root,
+.button .css-1fziool-MuiPaper-root-MuiCard-root {
+    background-color: transparent;
+    --Paper-shadow: none !important;
+}
+.button .css-46bh2p-MuiCardContent-root {
+    padding: 0;
+}
+.boxes .css-13y79c5-MuiTypography-root {
+    height: 50px;
+    background-color: #787ac3;
+    padding: 10px 0;
+}
+.boxes .css-13y79c5-MuiTypography-root.title {
+    background-color: transparent;
+    height: 30px;
+}
+.boxes .css-46bh2p-MuiCardContent-root p {
+    text-align: center;
+}
+.css-mhc70k-MuiGrid-root>.MuiGrid-item {
+    padding-top: 0;
+}
+span.css-1edfpdg-MuiTypography-root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal !important;
+}
+
