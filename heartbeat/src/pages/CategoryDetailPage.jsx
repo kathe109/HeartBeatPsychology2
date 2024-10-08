@@ -8,6 +8,10 @@ const CategoryDetailPage = () => {
   const navigate = useNavigate();
   const details = categoryDetails[categoryId];
 
+  if (!details) {
+    return <p>Cargando detalles...</p>; // Manejo de carga o de no encontrado
+  }
+
   const handleNext = () => {
     const currentIndex = categoryIds.indexOf(categoryId);
     const nextIndex = (currentIndex + 1) % categoryIds.length;
@@ -24,6 +28,13 @@ const CategoryDetailPage = () => {
     navigate('/categories'); // Navegar de regreso a la lista principal de categorías
   };
 
+  // Extracción segura de las descripciones con verificación
+  const splitDescription = (text) => text ? text.split('\n').map((part, index) => (
+    <Typography key={index} component="span" variant="body1" style={{ display: 'block', fontStyle: 'italic' }}>
+      {part}
+    </Typography>
+  )) : null;
+
   return (
     <Container className='detail category-detail-container' component="main" maxWidth="md">
       <Button variant="contained" onClick={goBack}>Regresar</Button>
@@ -31,25 +42,19 @@ const CategoryDetailPage = () => {
         <Typography className='title1' variant="h4" gutterBottom>
           {details.title}
         </Typography>
-        <Typography variant="h4" gutterBottom>
+        <Typography className='title2' variant="h4" gutterBottom>
           {details.title2}
         </Typography>
         <Container className='orden'>
-        <Box component="img" src={details.imageUrl} alt={details.title} sx={{ width: '100%', height: 'auto', marginBottom: 2 }} />
-        <Typography variant="body1" component="div">
-          <Typography component="span" variant="body1" style={{ fontStyle: 'italic' }}>
-            {details.description.split('\n')[0]}
+          <Box component="img" src={details.imageUrl} alt={details.title} sx={{ width: '100%', height: 'auto', marginBottom: 2 }} />
+          <Typography variant="body1" component="div">
+            {splitDescription(details.description)}
+            {splitDescription(details.description2)}
+            {splitDescription(details.description3)}
           </Typography>
-          <Typography component="p" variant="body1">
-            {details.description.split('\n')[1]}
-          </Typography>
-          <Typography component="span" variant="body1" style={{ fontStyle: 'italic' }}>
-            {details.description.split('\n')[2]}
-          </Typography>
-        </Typography>
         </Container>
       </Paper>
-      <Button variant="contained" onClick={handleNext}>Siguiente</Button>
+      <Button className='next' variant="contained" onClick={handleNext}>Siguiente</Button>
     </Container>
   );
 };

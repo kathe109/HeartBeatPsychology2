@@ -414,7 +414,7 @@ body, .container { /* Asumiendo que usas una clase container para envolver todo 
     flex-direction: column;
     --Paper-shadow: none !important;
     background-color: #4d448b;
-    height: 100vh;
+    height: auto;
 }
 /* En tu archivo CSS global o en un módulo CSS específico para CategoryDetailPage */
 .category-detail-container {
@@ -468,11 +468,24 @@ img.css-1kdeica {
 }
 span.css-1edfpdg-MuiTypography-root {
     font-family: Arial, Helvetica, sans-serif;
-    font-style: normal !important;
 }
-.category-detail-container.css-142372x-MuiButtonBase-root-MuiButton-root {
+.category-detail-container .css-142372x-MuiButtonBase-root-MuiButton-root {
+    border-radius: 0;
     background-color: #342c6d;
+    margin-top: 20px;
+    width: 200px;
+    margin-left: -25px;
 }
 h1.css-ku7d13-MuiTypography-root {
     color: white;
 }
+.category-detail-container .css-142372x-MuiButtonBase-root-MuiButton-root.next {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+}
+.orden .css-1edfpdg-MuiTypography-root:nth-child(2) {
+    margin: 20px 20px 20px 0;
+    font-style: normal !important;
+}
+

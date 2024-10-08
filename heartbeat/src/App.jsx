@@ -8,6 +8,10 @@ import AboutUs from './pages/About';
 import Sessions from './pages/Sessions';
 import CategoriesPage from './pages/CategoriesPage';
 import CategoryDetailPage from './pages/CategoryDetailPage';
+import RupturaAmorosaPage from './pages/RupturaAmorosaPage';
+import BajaAutoestimaPage from './pages/BajaAutoestimaPage';
+import PerdiAMiMejorAmigoPage from './pages/PerdiAMiMejorAmigoPage';
+import OtrosPage from './pages/OtrosPage';
 
 const App = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -25,6 +29,10 @@ const App = () => {
                 <Route path="/about" element={<AboutUs />} />
                 <Route path="/sessions" element={<Sessions />} />
                 <Route path="/categories/:categoryId" element={<CategoryDetailPage />} />
+                <Route path="/categories/ruptura-amorosa" element={<RupturaAmorosaPage />} />
+                <Route path="/categories/baja-autoestima" element={<BajaAutoestimaPage />} />
+                <Route path="/categories/perdi-a-mi-mejor-amigo" element={<PerdiAMiMejorAmigoPage />} />
+                <Route path="/categories/otros" element={<OtrosPage />} />
             </Routes>
         </Router>
     );
