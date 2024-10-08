@@ -85,7 +85,7 @@ html, body {
     border-radius: 4px;
     border: 1px solid #afb2ff;
     background: transparent; /* Semi-translúcido */
-    color: #333;
+    color: white;
 }
 .auth-form input:hover {
     border: 1px solid #afb2ff !important;
@@ -473,4 +473,6 @@ span.css-1edfpdg-MuiTypography-root {
 .category-detail-container.css-142372x-MuiButtonBase-root-MuiButton-root {
     background-color: #342c6d;
 }
-
+h1.css-ku7d13-MuiTypography-root {
+    color: white;
+}
