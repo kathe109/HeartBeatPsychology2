@@ -479,24 +479,22 @@ span.css-1edfpdg-MuiTypography-root {
     background-color: #342c6d;
     margin-top: 20px;
     width: 200px;
-
 }
 .css-142372x-MuiButtonBase-root-MuiButton-root.anterior {
-    top: 10px;
+    top: 0px;
 }
 .amor-2 .css-142372x-MuiButtonBase-root-MuiButton-root.anterior {
-    top: 60px;
+    top: 0px;
 }
 h1.css-ku7d13-MuiTypography-root {
     color: white;
 }
 .css-142372x-MuiButtonBase-root-MuiButton-root.siguiente {
-    position: absolute;
-    right: 0;
-    bottom: -15px;
     border-radius: 0;
     background-color: #342c6d;
     width: 200px;
+    margin-top: 20px;
+    margin-left: 550px;
 }
 .orden .css-1edfpdg-MuiTypography-root:nth-child(2) {
     margin: 20px 20px 20px 0;
@@ -553,6 +551,9 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-1jk99ih-MuiInputBase-inp
 }
 .lista .css-193q0wg-MuiListItem-root {
     padding: 0 10px;
+}
+.lista .css-1y5vrnu-MuiButtonBase-root-MuiCheckbox-root {
+    padding: 5px;
 }
 .primer-conteiner {
     max-width: 400px;

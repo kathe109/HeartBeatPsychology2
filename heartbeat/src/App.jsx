@@ -16,6 +16,8 @@ import PerdiAMiMejorAmigoPage from './pages/PerdiAMiMejorAmigoPage';
 import PerdiAMiMejorAmigoPage2 from './pages/PerdiAMiMejorAmigoPage-2.jsx';
 import RupturaAmorosaPage2 from './pages/RupturaAmorosaPage-2';
 import RupturaAmorosaPage3 from './pages/RupturaAmorosaPage-3';
+import RupturaAmorosaPage4 from './pages/RupturaAmorosaPage-4';
+import RupturaAmorosaPage5 from './pages/RupturaAmorosaPage-5';
 import OtrosPage from './pages/OtrosPage';
 
 const App = () => {
@@ -37,6 +39,8 @@ const App = () => {
                 <Route path="/categories/ruptura-amorosa" element={<RupturaAmorosaPage />} />
                 <Route path="/categories/ruptura-amorosa-2" element={<RupturaAmorosaPage2 />} />
                 <Route path="/categories/ruptura-amorosa-3" element={<RupturaAmorosaPage3 />} />
+                <Route path="/categories/ruptura-amorosa-4" element={<RupturaAmorosaPage4 />} />
+                <Route path="/categories/ruptura-amorosa-5" element={<RupturaAmorosaPage5 />} />
                 <Route path="/categories/baja-autoestima" element={<BajaAutoestimaPage />} />
                 <Route path="/categories/baja-autoestima-2" element={<BajaAutoestimaPage2 />} />
                 <Route path="/categories/baja-autoestima-3" element={<BajaAutoestimaPage3 />} />

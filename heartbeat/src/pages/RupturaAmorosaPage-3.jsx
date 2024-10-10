@@ -29,7 +29,7 @@ const RupturaAmorosaPage3 = () => {
   };
 
   const handleNext = () => {
-    navigate("/next-category-page"); // Avanza a la siguiente categoría relevante
+    navigate("/categories/ruptura-amorosa-4"); // Avanza a la siguiente categoría relevante
   };
 
   const reasons = [
@@ -46,7 +46,7 @@ const RupturaAmorosaPage3 = () => {
   ];
 
   return (
-    <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '300px', marginBottom: '0', paddingTop: '20px' }}>
+    <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '350px', marginBottom: '0', padding: '20px', maxWidth: '1000px' }}>
       <Button
         className="regresar"
         variant="contained"
@@ -55,7 +55,7 @@ const RupturaAmorosaPage3 = () => {
       >
         Regresar
       </Button>
-      <Paper style={{ padding: "20px", marginBottom: "20px" }}>
+      <Paper style={{ padding: "20px", marginBottom: "0", marginTop:'20px' }}>
         <Typography variant="h4" gutterBottom>
           Terminar una relación.
         </Typography>
@@ -116,14 +116,7 @@ const RupturaAmorosaPage3 = () => {
         </Container>
       </Paper>
       <Button className='anterior' variant="contained" onClick={handlePrev} style={{ marginRight: '10px' }}>Anterior</Button>
-      <Button
-        className="siguiente"
-        variant="contained"
-        onClick={handleNext}
-        style={{ marginRight: "10px" }}
-      >
-        Siguiente
-      </Button>
+      <Button className='siguiente' variant="contained" onClick={handleNext}>Siguiente</Button>
     </Container>
   );
 };
