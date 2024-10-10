@@ -10,7 +10,10 @@ import CategoriesPage from './pages/CategoriesPage';
 import CategoryDetailPage from './pages/CategoryDetailPage';
 import RupturaAmorosaPage from './pages/RupturaAmorosaPage';
 import BajaAutoestimaPage from './pages/BajaAutoestimaPage';
+import BajaAutoestimaPage2 from './pages/BajaAutoestimaPage-2';
+import BajaAutoestimaPage3 from './pages/BajaAutoestimaPage-3';
 import PerdiAMiMejorAmigoPage from './pages/PerdiAMiMejorAmigoPage';
+import PerdiAMiMejorAmigoPage2 from './pages/PerdiAMiMejorAmigoPage-2.jsx';
 import RupturaAmorosaPage2 from './pages/RupturaAmorosaPage-2';
 import RupturaAmorosaPage3 from './pages/RupturaAmorosaPage-3';
 import OtrosPage from './pages/OtrosPage';
@@ -35,7 +38,10 @@ const App = () => {
                 <Route path="/categories/ruptura-amorosa-2" element={<RupturaAmorosaPage2 />} />
                 <Route path="/categories/ruptura-amorosa-3" element={<RupturaAmorosaPage3 />} />
                 <Route path="/categories/baja-autoestima" element={<BajaAutoestimaPage />} />
+                <Route path="/categories/baja-autoestima-2" element={<BajaAutoestimaPage2 />} />
+                <Route path="/categories/baja-autoestima-3" element={<BajaAutoestimaPage3 />} />
                 <Route path="/categories/perdi-a-mi-mejor-amigo" element={<PerdiAMiMejorAmigoPage />} />
+                <Route path="/categories/perdi-a-mi-mejor-amigo-2" element={<PerdiAMiMejorAmigoPage2 />} />
                 <Route path="/categories/otros" element={<OtrosPage />} />
             </Routes>
         </Router>
