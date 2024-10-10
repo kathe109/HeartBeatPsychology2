@@ -1,7 +1,7 @@
 body {
     /* background-image: url('../assets/fondo-5.png'); */
     background-size: cover;
-    background-color: #4d448b;
+    background-color: #afb2ff;
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
@@ -247,7 +247,7 @@ html, body {
 
 /* Base del contenedor del formulario */
 .auth-form {
-    background-color: transparent; /* Fondo semi-transparente */
+    background-color: #342c6d; /* Fondo semi-transparente */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -311,7 +311,7 @@ body, .container { /* Asumiendo que usas una clase container para envolver todo 
 }
 .auth-form {
     max-width: 400px; /* Máximo ancho del formulario */
-    background-color: transparent;
+    background-color: #342c6d;
     padding: 10px 0;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -469,23 +469,100 @@ img.css-1kdeica {
 span.css-1edfpdg-MuiTypography-root {
     font-family: Arial, Helvetica, sans-serif;
 }
-.category-detail-container .css-142372x-MuiButtonBase-root-MuiButton-root {
+.css-142372x-MuiButtonBase-root-MuiButton-root.regresar,
+.css-142372x-MuiButtonBase-root-MuiButton-root.anterior {    
     border-radius: 0;
     background-color: #342c6d;
     margin-top: 20px;
     width: 200px;
     margin-left: -25px;
 }
+.css-142372x-MuiButtonBase-root-MuiButton-root.anterior {
+    top: 10px;
+}
+.amor-2 .css-142372x-MuiButtonBase-root-MuiButton-root.anterior {
+    top: 60px;
+}
 h1.css-ku7d13-MuiTypography-root {
     color: white;
 }
-.category-detail-container .css-142372x-MuiButtonBase-root-MuiButton-root.next {
+.css-142372x-MuiButtonBase-root-MuiButton-root.siguiente {
     position: absolute;
     right: 0;
-    bottom: -20px;
+    bottom: 20px;
+    border-radius: 0;
+    background-color: #342c6d;
+    width: 200px;
 }
 .orden .css-1edfpdg-MuiTypography-root:nth-child(2) {
     margin: 20px 20px 20px 0;
     font-style: normal !important;
 }
-
+.css-u4uvlt-MuiContainer-root.amor {
+    max-width: 100%;
+    height: auto;
+}
+.amor .css-1dtoofl-MuiPaper-root {
+    background-color: #4d448b;
+    --Paper-shadow: none !important;
+    color: white;
+}
+.css-5c1adp-MuiContainer-root.position {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+.navbar .css-6j4gle-MuiButtonBase-root-MuiButton-root:hover {
+    background-color: #342c6d !important;
+}
+.css-1o0kqxp-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #afb2ff !important;
+}
+.css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label,
+.css-18pjc51-MuiFormLabel-root-MuiInputLabel-root,
+label[data-shrink=false]+.MuiInputBase-formControl .css-1jk99ih-MuiInputBase-input-MuiOutlinedInput-input,
+.css-1q964xs-MuiFormLabel-root-MuiInputLabel-root {
+    color: white !important;
+}
+.css-18pjc51-MuiFormLabel-root-MuiInputLabel-root {
+    text-shadow: -3px -3px 12px black;
+}
+.css-1q964xs-MuiFormLabel-root-MuiInputLabel-root {
+    top: 5px;
+}
+.about {
+    color: white;
+}
+.css-mhc70k-MuiGrid-root>.MuiGrid-item {
+    padding-top: 0 !important;
+}
+.orden-list {
+    display: flex;
+    flex-direction: row;
+}
+.css-qg6ui7-MuiTypography-root {
+    font-size: 14px;
+}
+.amor .css-5c1adp-MuiContainer-root {
+    padding: 0;
+}
+.lista .css-193q0wg-MuiListItem-root {
+    padding: 0 10px;
+}
+.primer-conteiner {
+    max-width: 400px;
+}
+.segundo-container {
+    padding-left: 70px !important;
+}
+.css-1y5vrnu-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, 
+.css-1y5vrnu-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+    color: #787ac3 !important;
+}
+.lista.css-1u169s7-MuiList-root {
+    background-color: #4f469f;
+    border-radius: 10px;
+}
+.lista .css-1edfpdg-MuiTypography-root {
+    font-size: 14px;
+}

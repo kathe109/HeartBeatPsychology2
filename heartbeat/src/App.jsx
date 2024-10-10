@@ -11,6 +11,8 @@ import CategoryDetailPage from './pages/CategoryDetailPage';
 import RupturaAmorosaPage from './pages/RupturaAmorosaPage';
 import BajaAutoestimaPage from './pages/BajaAutoestimaPage';
 import PerdiAMiMejorAmigoPage from './pages/PerdiAMiMejorAmigoPage';
+import RupturaAmorosaPage2 from './pages/RupturaAmorosaPage-2';
+import RupturaAmorosaPage3 from './pages/RupturaAmorosaPage-3';
 import OtrosPage from './pages/OtrosPage';
 
 const App = () => {
@@ -24,12 +26,14 @@ const App = () => {
                     <Route path="/" element={<AuthForm setIsLoggedIn={setIsLoggedIn} />} />
                     <Route path="/login" element={<AuthForm setIsLoggedIn={setIsLoggedIn} />} />
                     <Route path="/categories" element={<CategoriesPage />} />
+                    <Route path="/about" element={<AboutUs />} />
                 </Route>
                 {/* Rutas sin Navbar o Footer */}
-                <Route path="/about" element={<AboutUs />} />
                 <Route path="/sessions" element={<Sessions />} />
                 <Route path="/categories/:categoryId" element={<CategoryDetailPage />} />
                 <Route path="/categories/ruptura-amorosa" element={<RupturaAmorosaPage />} />
+                <Route path="/categories/ruptura-amorosa-2" element={<RupturaAmorosaPage2 />} />
+                <Route path="/categories/ruptura-amorosa-3" element={<RupturaAmorosaPage3 />} />
                 <Route path="/categories/baja-autoestima" element={<BajaAutoestimaPage />} />
                 <Route path="/categories/perdi-a-mi-mejor-amigo" element={<PerdiAMiMejorAmigoPage />} />
                 <Route path="/categories/otros" element={<OtrosPage />} />

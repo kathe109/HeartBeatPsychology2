@@ -51,27 +51,19 @@ function AuthForm({ setIsLoggedIn }) {
                     {!isLogin && (
                         <>
                             <TextField
-                                variant="outlined"
-                                margin="normal"
-                                required
-                                fullWidth
-                                label="Nombre Completo"
-                                autoComplete="name"
-                                autoFocus
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
-                            />
-                            <TextField
-                                variant="outlined"
-                                margin="normal"
-                                required
-                                fullWidth
-                                label="Edad"
-                                type="number"
-                                autoComplete="age"
-                                value={age}
-                                onChange={(e) => setAge(e.target.value)}
-                            />
+                    label="Correo electrónico"
+                    type="email"
+                    fullWidth
+                    margin="normal"
+                    required
+                />
+                <TextField
+                    label="Contraseña"
+                    type="password"
+                    fullWidth
+                    margin="normal"
+                    required
+                />
                         </>
                     )}
                     <TextField
