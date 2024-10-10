@@ -15,25 +15,25 @@ const categories = [
     id: "ruptura-amorosa",
     title: "Ruptura amorosa",
     description: "Terminaste una relación con una persona la cual amaste con toda tu alma y ahora sientes que no puedes vivir sin esta persona, ¿no?.",
-    imageUrl: "/assets/ruptura.jpg",
+    imageUrl: "/assets/corazones.jpeg",
   },
   {
     id: "baja-autoestima",
     title: "Baja autoestima",
     description: "¿Te sientes inseguro cuando te ves al espejo, sientes que nadie te va querer  y piensas que cualquier persona es mejor que tu?.",
-    imageUrl: "/assets/baja.jpg",
+    imageUrl: "/assets/piso.jpeg",
   },
   {
     id: "perdi-a-mi-mejor-amigo",
     title: "Perdí a mi mejor amigo/a",
     description: "Después de años de amistad, una pelea pudo acabar con la amistad, sientes que tienes la culpa y que será complicado solucionar las cosas de nuevo.",
-    imageUrl: "/assets/amigo.jpg",
+    imageUrl: "/assets/heartbeat.jpeg",
   },
   {
     id: "otros",
     title: "Otros...",
     description: "Problemas familiares, no sabes como salir del closet con sus padres, auto...",
-    imageUrl: "/assets/familia.jpg",
+    imageUrl: "/assets/trauma.jpeg",
   },
 ];
 

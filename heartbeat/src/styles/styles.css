@@ -390,6 +390,7 @@ body, .container { /* Asumiendo que usas una clase container para envolver todo 
     justify-content: flex-start;
     color: #ffff;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 25px;
 }
 .boxes .css-6fm6rz-MuiPaper-root-MuiCard-root {
     background: #787ac3;
@@ -447,14 +448,16 @@ img.css-1kdeica {
 .button .css-1fziool-MuiPaper-root-MuiCard-root {
     background-color: transparent;
     --Paper-shadow: none !important;
+    border-radius: 0;
 }
 .button .css-46bh2p-MuiCardContent-root {
     padding: 0;
 }
 .boxes .css-13y79c5-MuiTypography-root {
-    height: 50px;
+    height: 25px;
     background-color: #787ac3;
     padding: 10px 0;
+    font-size: 16px;
 }
 .boxes .css-13y79c5-MuiTypography-root.title {
     background-color: transparent;
@@ -462,6 +465,7 @@ img.css-1kdeica {
 }
 .boxes .css-46bh2p-MuiCardContent-root p {
     text-align: center;
+    max-width: 300px;
 }
 .css-mhc70k-MuiGrid-root>.MuiGrid-item {
     padding-top: 0;
@@ -475,7 +479,7 @@ span.css-1edfpdg-MuiTypography-root {
     background-color: #342c6d;
     margin-top: 20px;
     width: 200px;
-    margin-left: -25px;
+
 }
 .css-142372x-MuiButtonBase-root-MuiButton-root.anterior {
     top: 10px;
@@ -489,7 +493,7 @@ h1.css-ku7d13-MuiTypography-root {
 .css-142372x-MuiButtonBase-root-MuiButton-root.siguiente {
     position: absolute;
     right: 0;
-    bottom: 20px;
+    bottom: -15px;
     border-radius: 0;
     background-color: #342c6d;
     width: 200px;
@@ -511,6 +515,7 @@ h1.css-ku7d13-MuiTypography-root {
     display: flex;
     flex-direction: row;
     padding: 0;
+    justify-content: space-between;
 }
 .navbar .css-6j4gle-MuiButtonBase-root-MuiButton-root:hover {
     background-color: #342c6d !important;
@@ -565,4 +570,17 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-1jk99ih-MuiInputBase-inp
 }
 .lista .css-1edfpdg-MuiTypography-root {
     font-size: 14px;
+}
+.css-kqfc7p-MuiCardMedia-root {
+    border-radius: 10px;
+    width: 98% !important;
+}
+.css-mhc70k-MuiGrid-root>.MuiGrid-item {
+    padding-left: 0 !important;
+}
+.css-1fziool-MuiPaper-root-MuiCard-root {
+    margin: 0 !important;
+}
+.position .css-0 {
+    max-width: 500px;
 }

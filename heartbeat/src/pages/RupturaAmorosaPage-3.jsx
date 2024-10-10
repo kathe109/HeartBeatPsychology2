@@ -51,6 +51,7 @@ const RupturaAmorosaPage3 = () => {
         className="regresar"
         variant="contained"
         onClick={handlePrev}
+        style={{ marginBottom: "20px 0" }}
       >
         Regresar
       </Button>

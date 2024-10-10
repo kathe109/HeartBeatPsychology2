@@ -18,10 +18,10 @@ const RupturaAmorosaPage = () => {
   };
 
   // Asumiendo que tienes una imagen específica para esta página
-  const imageUrl = "../assets/ruptura.png";  // Reemplaza esto con la ruta real de tu imagen
+  const imageUrl = "../assets/diapositiva.jpeg";  // Reemplaza esto con la ruta real de tu imagen
 
   return (
-    <Container className='amor' maxWidth="md" style={{ padding: '20px' }}>
+    <Container className='amor' maxWidth="md" style={{ padding: '20px', width:'1000px' }}>
       <Button className='regresar' variant="contained" onClick={goBack} style={{ marginBottom: '20px' }}>Regresar</Button>
       <Paper elevation={3} style={{ padding: '20px' }}>
         <Typography variant="h4" gutterBottom>
@@ -30,18 +30,18 @@ const RupturaAmorosaPage = () => {
         <Typography variant="h4" gutterBottom>
           Terminar una relación.
         </Typography>
-        <Typography variant="subtitle1" component="div" style={{ fontStyle: 'italic', marginBottom: '20px' }}>
+        <Typography variant="subtitle1" component="div" style={{ fontStyle: 'italic', marginBottom: '20px', fontSize: '14px' }}>
           ¿Perdí al Amor de mi vida? ¿O solo un amor en mi vida?
         </Typography>
         <Container className='position'>
         <Box style={{ marginBottom: '20px' }}>
-          <Typography paragraph>
+          <Typography style={{maxWidth: '500px', fontSize: '14px'  }} paragraph>
             El otro día desperté en la mañana, se sintió diferente, un hueco en mi estómago que me invadió, no sabía la causa, no la recordaba...
           </Typography>
-          <Typography paragraph>
+          <Typography style={{maxWidth: '500px', fontSize: '14px'  }} paragraph>
             Hasta que decidí mirar mi celular para ver el mensaje que solía tener todas las mañanas, un cálido y dulce "Buenos días mi amor" de aquella persona...
           </Typography>
-          <Typography paragraph>
+          <Typography style={{maxWidth: '500px', fontStyle: 'italic', fontSize: '14px'  }} paragraph>
           Así suelen sentirse las primeras mañanas, ¿no es así?
         </Typography>
         </Box>
@@ -50,7 +50,7 @@ const RupturaAmorosaPage = () => {
           height="140"
           image={imageUrl}
           alt="Ruptura Amorosa"
-          style={{ width: '100%', height: 'auto', marginBottom: '20px' }}
+          style={{ width: '100%', height: 'auto', marginBottom: '20px', maxWidth:'400px', marginTop: '-130px' }}
         />
         </Container>
         {/* Aquí podrías añadir más contenido multimedia o interactivo si lo deseas */}

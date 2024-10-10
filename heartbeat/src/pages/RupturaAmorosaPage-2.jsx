@@ -17,6 +17,8 @@ const RupturaAmorosaPage2 = () => {
     navigate('/categories'); // Regresa al listado de categorías
   };
 
+  const imageUrl = "../assets/amor.jpeg";
+
   return (
     <Container className='amor amor-2' maxWidth="md">
       <Button className='regresar' variant="contained" onClick={goBack}>Regresar</Button>
@@ -36,9 +38,9 @@ const RupturaAmorosaPage2 = () => {
         </Typography>
         <CardMedia
           component="img"
-          image="/path/to/your/detailed/image.jpg" // Asegúrate de cambiar la ruta de la imagen
+          image={imageUrl}
           alt="Imagen descriptiva de ruptura amorosa"
-          style={{ width: '100%', height: 'auto', marginBottom: '20px' }}
+          style={{ width: '100%', height: 'auto', marginBottom: '20px', maxWidth: '300px' }}
         />
         </Container>
       </Paper>
