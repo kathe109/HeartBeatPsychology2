@@ -236,10 +236,12 @@ html, body {
     padding-bottom: 50px; /* Ajusta según la altura de tu footer */
     flex: 1; /* Ocupa el espacio disponible */
 }
-
-.css-mzavur-MuiContainer-root {
-
-}
+.spicy-rice-regular {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 .css-95f9g5-MuiToolbar-root {
     width: 100%;
@@ -584,4 +586,14 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-1jk99ih-MuiInputBase-inp
 }
 .position .css-0 {
     max-width: 500px;
+}
+.css-142372x-MuiButtonBase-root-MuiButton-root.siguiente-2 {
+    border-radius: 0;
+    background-color: #342c6d;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 760px;
+}
+.boxes .css-46bh2p-MuiCardContent-root p {
+    text-shadow: -3px -3px 12px black;
 }

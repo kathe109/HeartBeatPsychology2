@@ -29,6 +29,10 @@ const RupturaAmorosaPage4 = () => {
     navigate("/categories/ruptura-amorosa-5"); // Ajusta la navegación según sea necesario
   };
 
+  const goBack = () => {
+    navigate('/categories'); // Regresa al listado de categorías
+  }; 
+
   const recoverySteps = [
     "Cortar toda comunicación",
     "Eliminar recuerdos físicos y digitales",
@@ -43,8 +47,8 @@ const RupturaAmorosaPage4 = () => {
   ];
 
   return (
-    <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '150px', marginBottom: '0', padding: '20px', maxWidth: '1000px' }}>
-      <Button className="regresar" variant="contained" onClick={handlePrev} style={{ marginBottom: '0' }}>
+    <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '150px', marginBottom: '0', padding: '20px', maxWidth: '1000px', width: '1000px' }}>
+      <Button className="regresar" variant="contained" onClick={goBack} style={{ marginBottom: '0' }}>
         Regresar
       </Button>
       <Container className="orden-list">
@@ -60,7 +64,7 @@ const RupturaAmorosaPage4 = () => {
           Escucharte una buena playlist de las canciones más deprimentes que puedan existir. El objetivo de esto es que llores todo lo mucho y no habrás llorado, importante sacar como una nata espinas las emociones, escucha canciones que te recuerdan a esa persona.
         </Typography>
      </Container>
-        <Container>
+        <Container style={{paddingLeft: '50px'}}>
         <List className="lista">
           {recoverySteps.map((step, index) => (
             <ListItem key={index}>

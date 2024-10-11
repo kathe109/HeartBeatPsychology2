@@ -46,7 +46,7 @@ const RupturaAmorosaPage3 = () => {
   ];
 
   return (
-    <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '300px', marginBottom: '0', paddingTop: '20px' }}>
+    <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '220px', marginBottom: '0', paddingTop: '20px' }}>
       <Button
         className="regresar"
         variant="contained"
@@ -54,13 +54,13 @@ const RupturaAmorosaPage3 = () => {
       >
         Regresar
       </Button>
-      <Paper style={{ padding: "20px", marginBottom: "20px" }}>
+      <Paper style={{ padding: "20px", marginBottom: "0", marginTop: '20px'  }}>
         <Typography variant="h4" gutterBottom>
           Baja Autoestima.
         </Typography>
         <Typography
               variant="h5"
-              style={{ color: "#4A90E2", marginBottom: "20px" }}
+              style={{ color: "#4A90E2", marginBottom: "10px", color:'#342c6d' }}
             >
               Inseguridad.
             </Typography>
@@ -92,7 +92,7 @@ const RupturaAmorosaPage3 = () => {
           ))}
         </List>
             <Typography style={{fontSize: '14px', marginTop: '20px'}} paragraph>Selección múltiple</Typography>
-            <Typography style={{fontSize: '14px', marginBottom:'0'}} paragraph>
+            <Typography style={{fontSize: '13px', marginBottom:'0',fontStyle: 'italic'}} paragraph>
             Estas son algunas inseguridades de forma general, pues no especifican exactamente cada cosa, pero seguro que alguna vez en tu vida te has sentido inseguro por alguna de estas. Dejame decirte que es completamente válido, siempre las personas suelen decir frases como : “amate a ti mismo” o “eres perfecto tal y como eres” cuando son comentarios que realmente no ayudan al problema. Tener una inseguridad es difícil, no es cuestión de quitarla o eliminarla de nuestra vida es más bien saber cómo vivir con ella..
             </Typography>
           </Container>

@@ -32,6 +32,10 @@ const RupturaAmorosaPage3 = () => {
     navigate("/categories/ruptura-amorosa-4"); // Avanza a la siguiente categoría relevante
   };
 
+  const goBack = () => {
+    navigate('/categories'); // Regresa al listado de categorías
+  };
+
   const reasons = [
     "Te dejó por otra persona",
     "Te fue infiel",
@@ -46,11 +50,11 @@ const RupturaAmorosaPage3 = () => {
   ];
 
   return (
-    <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '350px', marginBottom: '0', padding: '20px', maxWidth: '1000px' }}>
+    <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '300px', marginBottom: '0', padding: '20px', maxWidth: '1000px', width: '1000px' }}>
       <Button
         className="regresar"
         variant="contained"
-        onClick={handlePrev}
+        onClick={goBack}
         style={{ marginBottom: "20px 0" }}
       >
         Regresar

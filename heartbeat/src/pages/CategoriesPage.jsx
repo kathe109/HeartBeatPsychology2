@@ -9,6 +9,9 @@ import {
   CardMedia,
   Container,
 } from "@mui/material";
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+</style>
 
 const categories = [
   {
@@ -58,7 +61,7 @@ const CategoriesPage = () => {
               >
                 <CardActionArea>
                   <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography className="spicy-rice-regular" gutterBottom variant="h5" component="div">
                       {category.title}
                     </Typography>
                   </CardContent>
@@ -72,7 +75,7 @@ const CategoriesPage = () => {
                     <Typography className="title" gutterBottom variant="h5" component="div">
                       {category.title}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography style={{textShadow: '-3px -3px 12px black;'}} variant="body2" color="text.secondary">
                       {category.description}
                     </Typography>
                   </CardContent>

@@ -17,31 +17,31 @@ const BajaAutoestimaPage = () => {
     navigate('/categories');  // Regresar al listado principal
   };
 
-  const imageUrl = "../assets/amistad.jpg";  // Ruta de la imagen
+  const imageUrl = "../assets/malas.jpg";  // Ruta de la imagen
 
   return (
-    <Container className='amor' maxWidth="md" style={{ padding: '20px' }}>
+    <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '50px', marginBottom: '0', padding: '20px', maxWidth: '1000px', width: '1000px' }}>
       <Button className='regresar' variant="contained" onClick={goBack} style={{ marginBottom: '20px' }}>Regresar</Button>
       <Paper elevation={3} style={{ padding: '20px' }}>
+        <Container style={{display: 'flex', flexDirection: 'row'}}>
         <Typography variant="h4" gutterBottom>
           Malas amistades - Episodio 1.
-        </Typography>
-        <Typography variant="h4" gutterBottom>
-          La Sombra del grupo 
         </Typography>
         
         {/* Mueve la imagen aquí, antes del texto */}
         <CardMedia
           component="img"
-          height="140"
           image={imageUrl}
           alt="Ruptura Amorosa"
-          style={{ width: '100%', height: 'auto', marginBottom: '20px', maxHeight: '200px' }}
+          style={{ width: '100%', height: 'auto', marginBottom: '0', maxHeight: '200px', maxWidth: '420px', marginLeft: '30px', marginTop: '10px' }}
         />
-
-        <Container className='position'>
+        </Container>
+        <Container style={{maxWidth: '900px'}} className='position'>
           <Box style={{ marginBottom: '20px' }}>
-            <Typography paragraph>
+          <Typography variant="h4" gutterBottom>
+          La Sombra del grupo 
+        </Typography>
+            <Typography style={{fontSize: '14px'}} paragraph>
               Alguna vez te has sentido como una sombra detrás de tus “amigos”. Sientes que estás ahí pero no eres parte, es decir, solo existes…
               Por más que lo intentes, nunca te van a tomar en cuenta para nada, ni serás suficiente. Eres el amigo menos importante, el más reemplazable, la última opción….
 
@@ -56,7 +56,7 @@ const BajaAutoestimaPage = () => {
         </Container>
         {/* Aquí podrías añadir más contenido multimedia o interactivo si lo deseas */}
       </Paper>
-      <Button className='siguiente' variant="contained" onClick={handleNext}>Siguiente</Button>
+      <Button className='siguiente siguiente-2' variant="contained" onClick={handleNext}>Siguiente</Button>
     </Container>
   );
 };
