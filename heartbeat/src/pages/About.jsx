@@ -4,7 +4,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className='about'>
+        <div style={{backgroundColor: '#342c6d', padding: '20px', borderRadius: '10px'}} className='about'>
             <h1>Sobre Nosotros</h1>
             <p>
                 Heart Beat Psychology es un centro dedicado a mejorar la salud mental
