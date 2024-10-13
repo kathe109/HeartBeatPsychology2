@@ -453,7 +453,7 @@ img.css-1kdeica {
     border-radius: 0;
 }
 .button .css-46bh2p-MuiCardContent-root {
-    padding: 0 3px 0 0;
+    padding: 0;
 }
 .boxes .css-13y79c5-MuiTypography-root {
     height: 25px;
@@ -587,9 +587,6 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-1jk99ih-MuiInputBase-inp
 .position .css-0 {
     max-width: 500px;
 }
-.position.position-2 .css-0 {
-    max-width: 900px;
-}
 .css-142372x-MuiButtonBase-root-MuiButton-root.siguiente-2 {
     border-radius: 0;
     background-color: #342c6d;
@@ -599,7 +596,4 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-1jk99ih-MuiInputBase-inp
 }
 .boxes .css-46bh2p-MuiCardContent-root p {
     text-shadow: -3px -3px 12px black;
-}
-.lista .css-1qa1mqp-MuiListItem-root {
-    padding-bottom: 0;
 }
