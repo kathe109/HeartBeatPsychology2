@@ -17,7 +17,7 @@ const BajaAutoestimaPage = () => {
     navigate('/categories');  // Regresar al listado principal
   };
 
-  const imageUrl = "../assets/malas.jpg";  // Ruta de la imagen
+  const imageUrl = "../assets/sunn-correct.jpg";  // Ruta de la imagen
 
   return (
     <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '50px', marginBottom: '0', padding: '20px', maxWidth: '1000px', width: '1000px' }}>
@@ -36,7 +36,7 @@ const BajaAutoestimaPage = () => {
           style={{ width: '100%', height: 'auto', marginBottom: '0', maxHeight: '200px', maxWidth: '420px', marginLeft: '30px', marginTop: '10px' }}
         />
         </Container>
-        <Container style={{maxWidth: '900px'}} className='position'>
+        <Container style={{width: '900px'}} className='position position-2'>
           <Box style={{ marginBottom: '20px' }}>
           <Typography variant="h4" gutterBottom>
           La Sombra del grupo 

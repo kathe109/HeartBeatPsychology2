@@ -10,6 +10,7 @@ import {
   ListItemText,
   Checkbox,
   FormControlLabel,
+  CardMedia,
 } from "@mui/material";
 
 const RupturaAmorosaPage3 = () => {
@@ -32,6 +33,8 @@ const RupturaAmorosaPage3 = () => {
     navigate("/categories/baja-autoestima-3"); // Avanza a la siguiente categoría relevante
   };
 
+  const imageUrl = "../assets/baja-sun.jpeg";
+
   const reasons = [
     "Peso",
     "Cara",
@@ -46,7 +49,7 @@ const RupturaAmorosaPage3 = () => {
   ];
 
   return (
-    <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '220px', marginBottom: '0', paddingTop: '20px' }}>
+    <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '210px', marginBottom: '0', paddingTop: '20px', paddingBottom:'20px' }}>
       <Button
         className="regresar"
         variant="contained"
@@ -69,13 +72,13 @@ const RupturaAmorosaPage3 = () => {
             <Typography style={{fontSize: '14px'}} paragraph>
             Todos tenemos inseguridades.
             </Typography>
-            <Typography style={{fontSize: '14px'}} paragraph>
-            Hablemos de cómo nos sentimos ya una vez aceptamos la realidad. ¿Qué sigue ahora? 
-            Quizá llegues a pensar que la solución más sencilla para escapar del sentimiento de melancolía sería acabar todo el helado para después acostarte en tu cama, llorar por horas hasta quedarse seco y terminar en un sueño profundo con la excusa de dormir para no pensar. 
-            </Typography>
-            <Typography style={{fontSize: '14px'}} paragraph>
-            (Posiblemente termines soñando con tu ex y te levantes llorando otra vez).
-            </Typography>
+            <CardMedia
+          component="img"
+          height="140"
+          image={imageUrl}
+          alt="baja"
+          style={{ width: '100%', height: 'auto', marginBottom: '0', maxWidth: '400px' }}
+        />
           </Container>
           <Container className="segundo-container">
             <Typography style={{fontSize: '14px'}} paragraph>
