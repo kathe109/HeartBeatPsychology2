@@ -21,7 +21,7 @@ const RupturaAmorosaPage = () => {
   const imageUrl = "../assets/diapositiva.jpeg";  // Reemplaza esto con la ruta real de tu imagen
 
   return (
-    <Container className='amor' maxWidth="md" style={{ padding: '20px', width:'1000px' }}>
+    <Container className='amor' maxWidth="md" style={{ padding: '20px', width:'1000px',marginTop: '20px'}}>
       <Button className='regresar' variant="contained" onClick={goBack} style={{ marginBottom: '20px' }}>Regresar</Button>
       <Paper elevation={3} style={{ padding: '20px' }}>
         <Typography variant="h4" gutterBottom>

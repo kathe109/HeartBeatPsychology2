@@ -17,10 +17,10 @@ const BajaAutoestimaPage = () => {
     navigate('/categories');
   };
 
-  const imageUrl = "../assets/inseguridad.jpg";
+  const imageUrl = "../assets/sun4.jpeg";
 
   return (
-    <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '80px', marginBottom: '0', paddingTop: '20px' }}>
+    <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '110px', marginBottom: '0', paddingTop: '20px', paddingBottom: '20px' }}>
       <Button className='regresar' variant="contained" onClick={goBack} style={{ marginBottom: '20px' }}>Regresar</Button>
       <Paper elevation={3} style={{ padding: '20px', position: 'relative' }}>
         <Typography style={{fontSize: '20px'}} variant="h4" gutterBottom>
@@ -38,7 +38,7 @@ const BajaAutoestimaPage = () => {
           height="140"
           image={imageUrl}
           alt="Inseguridad"
-          style={{ width: '100px', height: 'auto', maxWidth: '500px' }}  // Ajusta el tamaño según lo que necesites
+          style={{ width: '100px', height: 'auto', maxWidth: '300px' }}  // Ajusta el tamaño según lo que necesites
         />
           <Box style={{ marginBottom: '0', padding: '10px', borderRadius: '5px' }}>
             <Typography style={{fontSize: '14px'}} variant="body1">

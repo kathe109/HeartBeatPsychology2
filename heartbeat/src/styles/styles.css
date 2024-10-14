@@ -597,3 +597,13 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-1jk99ih-MuiInputBase-inp
 .boxes .css-46bh2p-MuiCardContent-root p {
     text-shadow: -3px -3px 12px black;
 }
+.button .css-46bh2p-MuiCardContent-root {
+    padding: 0;
+    padding: 0 3px 0 0;
+}
+.position.position-2 .css-0 {
+    max-width: 900px;
+}
+.lista .css-1qa1mqp-MuiListItem-root {
+    padding-bottom: 0;
+}
