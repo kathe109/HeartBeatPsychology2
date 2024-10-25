@@ -594,9 +594,9 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-1jk99ih-MuiInputBase-inp
     margin-top: 20px;
     margin-left: 760px;
 }
-.boxes .css-46bh2p-MuiCardContent-root p {
+/* .boxes .css-46bh2p-MuiCardContent-root p {
     text-shadow: -3px -3px 12px black;
-}
+} */
 .button .css-46bh2p-MuiCardContent-root {
     padding: 0;
     padding: 0 3px 0 0;

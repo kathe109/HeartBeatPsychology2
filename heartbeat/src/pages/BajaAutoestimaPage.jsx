@@ -22,7 +22,7 @@ const BajaAutoestimaPage = () => {
 
   return (
     <Container className='amor' maxWidth="md" style={{ padding: '20px',marginTop: '50px', maxWidth: '1000px', width: '1000px' }}>
-      <Button className='regresar' variant="contained" onClick={goBack} style={{ marginBottom: '20px' }}>Regresar</Button>
+      <Button className='regresar button' variant="contained" onClick={goBack} style={{ marginBottom: '20px' }}>Regresar</Button>
       <Paper elevation={3} style={{ padding: '20px'}}>
         <Typography variant="h4" gutterBottom>
           Baja autoestima - Episodio 1.
@@ -50,7 +50,7 @@ const BajaAutoestimaPage = () => {
         {/* Aquí podrías añadir más contenido multimedia o interactivo si lo deseas */}
       </Paper>
 
-      <Button className='siguiente siguiente-2' variant="contained" onClick={handleNext}>Siguiente</Button>
+      <Button className='siguiente siguiente-2 button' variant="contained" onClick={handleNext}>Siguiente</Button>
     </Container>
   );
 };

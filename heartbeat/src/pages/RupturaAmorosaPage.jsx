@@ -21,8 +21,8 @@ const RupturaAmorosaPage = () => {
   const imageUrl = "../assets/diapositiva.jpeg";  // Reemplaza esto con la ruta real de tu imagen
 
   return (
-    <Container className='amor' maxWidth="md" style={{ padding: '20px', width:'1000px',marginTop: '20px'}}>
-      <Button className='regresar' variant="contained" onClick={goBack} style={{ marginBottom: '20px' }}>Regresar</Button>
+    <Container className='amor' maxWidth="md" style={{ padding: '20px !important', width:'1000px !important',marginTop: '20px !important'}}>
+      <Button className='regresar button' variant="contained" onClick={goBack} style={{ marginBottom: '20px' }}>Regresar</Button>
       <Paper elevation={3} style={{ padding: '20px' }}>
         <Typography variant="h4" gutterBottom>
           Ruptura amorosa - Episodio 1.
@@ -55,8 +55,8 @@ const RupturaAmorosaPage = () => {
         </Container>
         {/* Aquí podrías añadir más contenido multimedia o interactivo si lo deseas */}
       </Paper>
-      <Button className='anterior' variant="contained" onClick={handlePrev} style={{ marginRight: '10px' }}>Anterior</Button>
-      <Button className='siguiente' variant="contained" onClick={handleNext}>Siguiente</Button>
+      <Button className='anterior button' variant="contained" onClick={handlePrev} style={{ marginRight: '10px' }}>Anterior</Button>
+      <Button className='siguiente button' variant="contained" onClick={handleNext}>Siguiente</Button>
     </Container>
   );
 };

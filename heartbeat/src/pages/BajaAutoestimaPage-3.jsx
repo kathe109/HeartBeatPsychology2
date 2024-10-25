@@ -21,7 +21,7 @@ const BajaAutoestimaPage = () => {
 
   return (
     <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '110px', marginBottom: '0', paddingTop: '20px', paddingBottom: '20px' }}>
-      <Button className='regresar' variant="contained" onClick={goBack} style={{ marginBottom: '20px' }}>Regresar</Button>
+      <Button className='regresar button' variant="contained" onClick={goBack} style={{ marginBottom: '20px' }}>Regresar</Button>
       <Paper elevation={3} style={{ padding: '20px', position: 'relative' }}>
         <Typography style={{fontSize: '20px'}} variant="h4" gutterBottom>
           ¿Por qué me siento insuficiente?
@@ -48,7 +48,7 @@ const BajaAutoestimaPage = () => {
           </Container>
         </Container>
       </Paper>
-      <Button className='anterior' variant="contained" onClick={handlePrev} style={{ marginRight: '10px' }}>Anterior</Button>
+      <Button className='anterior button' variant="contained" onClick={handlePrev} style={{ marginRight: '10px' }}>Anterior</Button>
 
     </Container>
   );

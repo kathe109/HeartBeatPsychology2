@@ -21,7 +21,7 @@ const RupturaAmorosaPage2 = () => {
 
   return (
     <Container className='amor amor-2' maxWidth="md" style={{ padding: '20px', width:'1000px' }}>
-      <Button className='regresar' variant="contained" onClick={goBack}>Regresar</Button>
+      <Button className='regresar button' variant="contained" onClick={goBack}>Regresar</Button>
       <Paper style={{ padding: '20px', marginTop: '20px', marginBottom: '0' }}>
         <Typography variant="h4" gutterBottom>
           Episodio 1. Terminar una relación.
@@ -45,8 +45,8 @@ const RupturaAmorosaPage2 = () => {
         />
         </Container>
       </Paper>
-      <Button className='anterior' variant="contained" onClick={handlePrev} style={{ marginRight: '10px' }}>Anterior</Button>
-      <Button className='siguiente' variant="contained" onClick={handleNext}>Siguiente</Button>
+      <Button className='anterior button' variant="contained" onClick={handlePrev} style={{ marginRight: '10px' }}>Anterior</Button>
+      <Button className='siguiente button' variant="contained" onClick={handleNext}>Siguiente</Button>
     </Container>
   );
 };

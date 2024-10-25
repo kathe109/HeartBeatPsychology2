@@ -52,7 +52,7 @@ const RupturaAmorosaPage3 = () => {
   return (
     <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '300px', marginBottom: '0', padding: '20px', maxWidth: '1000px', width: '1000px' }}>
       <Button
-        className="regresar"
+        className="regresar button"
         variant="contained"
         onClick={goBack}
         style={{ marginBottom: "20px 0" }}
@@ -119,8 +119,8 @@ const RupturaAmorosaPage3 = () => {
           </Container>
         </Container>
       </Paper>
-      <Button className='anterior' variant="contained" onClick={handlePrev} style={{ marginRight: '10px' }}>Anterior</Button>
-      <Button className='siguiente' variant="contained" onClick={handleNext}>Siguiente</Button>
+      <Button className='anterior button' variant="contained" onClick={handlePrev} style={{ marginRight: '10px' }}>Anterior</Button>
+      <Button className='siguiente button' variant="contained" onClick={handleNext}>Siguiente</Button>
     </Container>
   );
 };

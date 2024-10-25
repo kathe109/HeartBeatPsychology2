@@ -7,8 +7,6 @@ import "../styles/styles.css";
 
 function AuthForm({ setIsLoggedIn }) { 
     const [isLogin, setIsLogin] = useState(true);
-    const [name, setName] = useState("");
-    const [age, setAge] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
@@ -17,7 +15,7 @@ function AuthForm({ setIsLoggedIn }) {
         event.preventDefault();
         try {
             await signInWithEmailAndPassword(auth, email, password);
-            setIsLoggedIn(true); // Ahora esto debería funcionar porque 'setIsLoggedIn' es una prop
+            setIsLoggedIn(true); 
             navigate("/categories");
         } catch (error) {
             console.error("Login Error:", error);
@@ -29,11 +27,15 @@ function AuthForm({ setIsLoggedIn }) {
         event.preventDefault();
         try {
             await createUserWithEmailAndPassword(auth, email, password);
-            setIsLoggedIn(true); // Igual aquí, usa el prop correctamente
+            setIsLoggedIn(true);
             navigate("/categories");
         } catch (error) {
-            console.error("Registration Error:", error);
-            alert("Failed to register");
+            if (error.code === 'auth/email-already-in-use') {
+                alert("El correo electrónico ya está en uso. Por favor, intenta iniciar sesión.");
+            } else {
+                console.error("Registration Error:", error);
+                alert("Error al registrar. Intenta nuevamente.");
+            }
         }
     };
 
@@ -48,24 +50,6 @@ function AuthForm({ setIsLoggedIn }) {
                     {isLogin ? "Iniciar Sesión" : "Registrar"}
                 </Typography>
                 <Box component="form" onSubmit={isLogin ? handleLogin : handleRegister} noValidate sx={{ mt: 1 }}>
-                    {!isLogin && (
-                        <>
-                            <TextField
-                    label="Correo electrónico"
-                    type="email"
-                    fullWidth
-                    margin="normal"
-                    required
-                />
-                <TextField
-                    label="Contraseña"
-                    type="password"
-                    fullWidth
-                    margin="normal"
-                    required
-                />
-                        </>
-                    )}
                     <TextField
                         variant="outlined"
                         margin="normal"

@@ -21,7 +21,7 @@ const BajaAutoestimaPage = () => {
 
   return (
      <Container className='amor amor-2'  maxWidth="md" style={{ marginTop: '150px', marginBottom: '0', padding: '20px', maxWidth: '1000px', width: '1000px' }}>
-      <Button className='regresar' variant="contained" onClick={goBack} style={{ marginBottom: '20px' }}>Regresar</Button>
+      <Button className='regresar button' variant="contained" onClick={goBack} style={{ marginBottom: '20px' }}>Regresar</Button>
       <Paper elevation={3} style={{ padding: '20px' }}>
         <Typography variant="h4" gutterBottom>
           Malas amistades
@@ -49,7 +49,7 @@ const BajaAutoestimaPage = () => {
           </Box>
         </Box>
       </Paper>
-      <Button className='anterior' variant="contained" onClick={handlePrev} style={{ marginRight: '10px' }}>Anterior</Button>
+      <Button className='anterior button' variant="contained" onClick={handlePrev} style={{ marginRight: '10px' }}>Anterior</Button>
     </Container>
   );
 };
